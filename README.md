@@ -4,7 +4,7 @@
 
 ### 项目简介
 
-从 0 到 1 配合`ts`使用`webpack`搭建一个通用的组件库，支持`ts`编写工具函数，收集一些项目好用的工具函数
+从 0 到 1 配合`ts`使用`webpack5`搭建一个通用的组件库，支持`ts`编写工具函数，收集一些项目好用的工具函数
 
 ### 项目使用技术栈
 
@@ -85,7 +85,7 @@ nice_utils.formateUrl('http://www.example.com?name=Maic&age=18'); // {name: 'Mai
 `getOrigin`
 
 ```js
-import nice_utils from '@maicfir/nice_utils';
+const nice_utils = require('@maicfir/nice_utils');
 nice_utils.getOrigin(); // 获取当前访问的域名
 ```
 
@@ -139,7 +139,7 @@ console.log(ret);
 
 [![GitHub Pages](https://github.com/element-plus/element-plus-playground/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/maicFir/lessonNote)
 
-- 看完项目如果觉得对你有帮助，就点个`star`鼓励下作者吧
+- 看完项目如果觉得对你有帮助，就点个`star`鼓励下作者哈
 
 - 更多技术关注`公众号:Web技术学苑`，好好学习、天天向上!
 
