@@ -72,6 +72,69 @@ npm run build
 
 ![](https://files.mdnice.com/user/24614/47df5bff-313d-430a-822a-3b727bd92093.png)
 
+### API
+
+`formateUrl`
+
+```js
+import nice_utils from 'nice_utils';
+// 使用示例
+nice_utils.formateUrl('http://www.example.com?name=Maic&age=18'); // {name: 'Maic',age: 18}
+```
+
+`getOrigin`
+
+```js
+import nice_utils from 'nice_utils';
+nice_utils.getOrigin(); // 获取当前访问的域名
+```
+
+`hasOwn`
+
+```js
+import nice_utils from 'nice_utils';
+nice_utils.hasOwn({ name: '张三' }, 'name'); // true name 是不是在对象中
+```
+
+`isType`
+
+```js
+import nice_utils from 'nice_utils';
+nice_utils.isType('')('String'); // true 判断是不是字符串类型
+```
+
+`lazyFunction`
+
+```js
+import nice_utils from 'nice_utils';
+const fn = nice_utils.lazyFunction(() => require('../xxx/index.js')); //函数懒加载
+```
+
+`memorize`
+
+```js
+import { memorize } from 'nice_utils';
+const fn = memorize(() => console.log(111));
+```
+
+`mergeDeep`
+
+```js
+import { mergeDeep } from 'nice_utils';
+mergeDeep({}, { a: 1, b: 2, info: { a: 1, b: 1 } });
+```
+
+`timerChunk`
+
+```js
+import { timerChunk } from 'nice_utils';
+const fn = timerChunk([], (res) => {
+  console.log(res);
+});
+const ret = fn();
+console.log(ret);
+```
+
 ### About me
 
 [![GitHub Pages](https://github.com/element-plus/element-plus-playground/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/maicFir/lessonNote)
