@@ -1,6 +1,6 @@
 {
-  "name": "nice_utils",
-  "version": "1.0.0",
+  "name": "@maicfir/nice_utils",
+  "version": "1.0.4",
   "description": "一个好用的工具类库",
   "main": "dist/umd/index.js",
   "types": "src/types/global.d.ts",
